@@ -114,19 +114,8 @@ npm run dev
 * **Runtime:** Node.js
 * **Dev Tools:** ts-node-dev, dotenv
 
----
 
-## 🧠 Author
 
-Made with ❤️ by [Nader Mohamed](https://github.com/NaderMohamed325)
-
----
-
-## 📄 License
-
-MIT License. Feel free to use and modify!
-
-```
 
 ---
 
