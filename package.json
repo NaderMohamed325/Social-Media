@@ -2,9 +2,16 @@
   "name": "social-media",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " nodemon --watch src/index.ts",
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/index.js",
+    "migrate": "prisma migrate dev --name init",
+    "generate": "prisma generate",
+    "format": "prettier --write \"src/**/*.{ts,js}\"",
+    "lint": "eslint \"src/**/*.{ts,js}\" --fix"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +28,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/node": "^24.0.13",
     "prisma": "^6.11.1"
   }
 }
