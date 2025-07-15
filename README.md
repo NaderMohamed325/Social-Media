@@ -1,7 +1,3 @@
-
-
-
-
 # Social Media Backend 🧠📱
 
 A TypeScript-based backend for a social media application, built with Express.js, Prisma ORM, and PostgreSQL. This server provides APIs for user authentication, post management, comments, likes, and more.
@@ -37,7 +33,7 @@ Social-Media/
 ├── package.json
 └── tsconfig.json
 
-````
+```
 
 ---
 
@@ -48,7 +44,7 @@ Social-Media/
 ```bash
 git clone https://github.com/NaderMohamed325/Social-Media.git
 cd Social-Media
-````
+```
 
 ### 2. Install dependencies
 
@@ -84,39 +80,34 @@ npm run dev
 
 ### Auth
 
-* `POST /api/auth/sign-up/email`
-* `POST /api/auth/sign-in/email`
+- `POST /api/auth/sign-up/email`
+- `POST /api/auth/sign-in/email`
 
 ### Posts
 
-* `GET /api/posts`
-* `POST /api/posts`
-* `DELETE /api/posts/:id`
+- `GET /api/posts`
+- `POST /api/posts`
+- `DELETE /api/posts/:id`
 
 ### Comments
 
-* `GET /api/posts/:postId/comments`
-* `POST /api/comments`
+- `GET /api/posts/:postId/comments`
+- `POST /api/comments`
 
 ### Likes
 
-* `POST /api/likes`
-* `DELETE /api/likes/:id`
+- `POST /api/likes`
+- `DELETE /api/likes/:id`
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Language:** TypeScript
-* **Backend Framework:** Express.js
-* **Database:** PostgreSQL
-* **ORM:** Prisma
-* **Runtime:** Node.js
-* **Dev Tools:** ts-node-dev, dotenv
-
-
-
+- **Language:** TypeScript
+- **Backend Framework:** Express.js
+- **Database:** PostgreSQL
+- **ORM:** Prisma
+- **Runtime:** Node.js
+- **Dev Tools:** ts-node-dev, dotenv
 
 ---
-
-
