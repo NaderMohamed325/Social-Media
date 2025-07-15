@@ -5,18 +5,16 @@ import { auth } from './lib/auth';
 import { userRouter } from './router/userRouter';
 import morgan from 'morgan';
 
-
-
-
 const port = 8000;
 
-app.use(express.json());
 app.use(morgan('dev'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', userRouter);
 
 app.all('/api/auth/{*any}', toNodeHandler(auth));
+app.use(express.json());
+
 app.listen(port, () => {
-  console.log(`Better Auth app listening on port ${port}`);
+  console.log(`app listening on port ${port}`);
 });
