@@ -4,8 +4,9 @@ import { toNodeHandler } from 'better-auth/node';
 import { auth } from './lib/auth';
 import { userRouter } from './router/userRouter';
 import morgan from 'morgan';
+import envVaraible from './utils/envVaraible';
 
-const port = 8000;
+const port = envVaraible.PORT || 8000;
 
 app.use(morgan('dev'));
 
